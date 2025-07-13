@@ -320,13 +320,7 @@ input[type="text" i] {
   padding-block: 1px;
   padding-inline: 2px;
 }
-input:not(
-    [type="file" i],
-    [type="image" i],
-    [type="checkbox" i],
-    [type="radio" i]
-  ) {
-}
+
 
 .header__email--btn {
   z-index: 2;
@@ -360,14 +354,7 @@ input:not(
   width: calc(100%-40%);
 }
 
-figure {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 40px;
-  margin-inline-end: 40px;
-  unicode-bidi: isolate;
-}
+
 
 .header__img {
   width: 100%;
@@ -511,13 +498,7 @@ div {
   border-radius: 500px;
 }
 
-figure {
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 40px;
-  margin-inline-end: 40px;
-  unicode-bidi: isolate;
-}
+
 
 .feature__img {
   width: 24px;
@@ -684,13 +665,7 @@ button {
   width: 50%;
 }
 
-figure {
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 40px;
-  margin-inline-end: 40px;
-  unicode-bidi: isolate;
-}
+
 
 .quality__img {
   z-index: 1;
@@ -755,13 +730,7 @@ section {
   width: 50%;
 }
 
-figure {
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 40px;
-  margin-inline-end: 40px;
-  unicode-bidi: isolate;
-}
+
 
 .steps__img {
   z-index: 2;
@@ -989,26 +958,14 @@ h2 {
   height: 36px;
 }
 
-figure {
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 40px;
-  margin-inline-end: 40px;
-  unicode-bidi: isolate;
-}
+
 
 .value__img {
   width: 20px;
   height: 20px;
 }
 
-svg[Attributes Style] {
-  fill: none;
-  stroke: rgb(39, 103, 73);
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
+
 
 svg:not(:root) {
   overflow-clip-margin: content-box;
@@ -1017,10 +974,6 @@ svg:not(:root) {
 
 :not(svg) {
   transform-origin: 0px 0px;
-}
-
-path[Attributes Style] {
-  d: path("M 17 5 H 9.5 a 3.5 3.5 0 0 0 0 7 h 5 a 3.5 3.5 0 0 1 0 H 6");
 }
 
 .value__name {
@@ -1062,21 +1015,9 @@ path[Attributes Style] {
   height: 36px;
 }
 
-figure {
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 40px;
-  margin-inline-end: 40px;
-  unicode-bidi: isolate;
-}
 
-svg[Attributes Style] {
-  fill: none;
-  stroke: rgb(155, 44, 44);
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
+
+
 
 svg:not(:root) {
   overflow-clip-margin: content-box;
@@ -1196,7 +1137,7 @@ p {
 }
 
 .plan {
-    width: 100%;
+    width:100%;
     max-width: 384px;
     margin: 64px 32px 0 0;
     padding-top: 8px;
@@ -1219,11 +1160,6 @@ p {
     left: 0;
     width: 100%;
     height: 8px;
-}
-
-.plan__top, .plan__middle, .plan__bottom, {
-    padding: 32px;
-    text-align: center;
 }
 
 .plan:nth-child(odd) .plan__name, .plan:nth-child(odd) .plan__price, .plan:nth-child(odd) .plan__target {
@@ -1294,7 +1230,7 @@ p {
 }
 
 .plan:nth-child(2) {
-   background: linear-gradient(135deg, rgb(76 81 191) 0%, rgb(102 126 234 100%);
+   background: linear-gradient(135deg, rgb(76 81 191) 0%, rgb(102 126 234) 100%);
 }
 
 .plan:nth-child(2) .plan__stripe {
@@ -1305,5 +1241,56 @@ p {
     color:#f7fafc;
 }
 
+.plan:nth-child(2) .plan__middle {
+    border-top: 2px solid rgb(102 126 234);
+    border-bottom: 2px solid rgb(102 126 234);
+}
+
+.plan:nth-child(2) .plan__button {
+    color: #6415ff;
+    background-color: #f7fafc;
+}
+@media (max-width: 1200) {
+    .plan__button {
+        max-width: none;
+    }
+}
+
+.plan__button {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 16px 32px;
+    border-radius: 500px;
+    border: none;
+    font-size: 14px;
+    width: 100%;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+    transition: all 300ms;
+}
+
+button {
+    cursor: pointer;
+    appearance: auto;
+    text-rendering: auto;
+    word-spacing: normal;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    padding-block: 1px;
+    padding-inline: 6px;
+}
+
+.plan:nth-child(3) .plan__stripe, .plan:nth-child(3) .plan__button {
+    color: #f7fafc;
+    background-color: linear-gradient(115deg, rgb(245, 101, 101) 0%);
+}
 
 
+
+
+
+.value__description {
+    max-width: 500px;
+}
