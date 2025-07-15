@@ -205,11 +205,15 @@ btn__menu--close {
   border: none;
 }
 
+
+
 /*
 
  Beautiful React
 
  */
+
+
 
 header {
   position: relative;
@@ -306,7 +310,6 @@ input[type="text" i] {
   padding-inline: 2px;
 }
 
-
 .header__email--btn {
   z-index: 2;
   margin: 8px;
@@ -339,8 +342,6 @@ input[type="text" i] {
   width: calc(100%-40%);
 }
 
-
-
 .header__img {
   width: 100%;
   max-width: 768px;
@@ -363,6 +364,8 @@ input[type="text" i] {
 FEATURES
 
 */
+
+
 
 main {
   margin-bottom: 96px;
@@ -481,8 +484,6 @@ div {
   border-radius: 500px;
 }
 
-
-
 .feature__img {
   width: 24px;
   height: 24px;
@@ -515,11 +516,14 @@ p {
   unicode-bidi: isolate;
 }
 
+
+
 /*
 
 QUALITY WORK
 
 */
+
 
 
 section {
@@ -661,6 +665,8 @@ figure {
 
 .quality__img {
   z-index: 1;
+  width: 100%;
+  height: auto;
 }
 
 img {
