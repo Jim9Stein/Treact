@@ -235,6 +235,12 @@ header .row {
   width: 40%;
 }
 
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 36px;
+  }
+}
+
 h1 {
   font-size: 48px;
   color: #1a202c;
@@ -257,6 +263,12 @@ h1 {
 
 .header__description--para {
   margin: 32px 0;
+}
+
+@media (max-width: 1200px) {
+  .header__description--para {
+    font-size: 16px;
+  }
 }
 
 p {
@@ -324,7 +336,7 @@ input[type="text" i] {
   transition: all 300ms;
 }
 
-.header__customer--title {
+.header__customers--title {
   margin-top: 80px;
   color: #a0aec0;
   font-size: 12px;
@@ -332,7 +344,13 @@ input[type="text" i] {
   letter-spacing: 0.6px;
 }
 
-.header__customer {
+@media (max-width: 1200px) {
+  .header__customers {
+    padding-right: 64px;
+  }
+}
+
+.header__customers {
   margin-top: 16px;
   padding-right: 128px;
   opacity: 0.5;
@@ -342,9 +360,22 @@ input[type="text" i] {
   width: calc(100%-40%);
 }
 
+@media (max-width: 1200px) {
+  .header__img--wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
 .header__img {
   width: 100%;
   max-width: 768px;
+}
+
+@media (max-width: 1200px) {
+  .header__img {
+    max-width: 512px;
+  }
 }
 
 .header__blob {
@@ -1212,12 +1243,6 @@ p {
   unicode-bidi: isolate;
 }
 
-@media (max-width: 1200px) {
-    .plan__bottom {
-        padding: 32px 64px;
-    }
-}
-
 .plan__top {
   display: flex;
   flex-direction: column;
@@ -1235,6 +1260,12 @@ p {
 .plan__bottom {
     z-index: 10;
     position: relative;
+}
+
+@media (max-width: 1200px) {
+    .plan__bottom {
+        padding: 32px 64px;
+    }
 }
 
 .plan:nth-child(2) {
