@@ -456,6 +456,7 @@ section {
   letter-spacing: 1.6px;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
 }
 
 h4 {
@@ -478,6 +479,7 @@ h4 {
   line-height: 1.5;
   margin: 16px 0;
   letter-spacing: 0.025em;
+  text-align: center;
 }
 
 h2 {
@@ -1002,6 +1004,7 @@ h2 {
 
 .values__list {
   display: flex;
+  
 }
 
 .value:nth-of-type(1) {
@@ -1012,6 +1015,8 @@ h2 {
 .value__title {
   display: flex;
   align-items: center;
+  
+  
 }
 
 .value:nth-child(1) .value__img--wrapper {
@@ -1025,6 +1030,13 @@ h2 {
   align-items: center;
   width: 36px;
   height: 36px;
+}
+
+figure {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
 }
 
 .value__img {
@@ -1073,7 +1085,7 @@ h2 {
   color: #718096;
   }
 
-#values .btn {
+ .btn {
   margin-top: 48px;
   background-color: #6415ff;
   padding: 12px 32px;
