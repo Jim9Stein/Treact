@@ -307,25 +307,37 @@ p {
   transition: border-color 300ms;
 }
 
-input:not(
-    [type="image" i],
-    [type="range" i],
-    [type="checkbox" i],
-    [type="radio" i]
-  ) {
-  overflow-clip-margin: 0px !important;
-  overflow: clip !important;
-}
+input:not([type="image" i], [type="range" i], [type="checkbox" i], [type="radio" i])
 
 input[type="text" i] {
   padding-block: 1px;
   padding-inline: 2px;
 }
 
+input:not([type="file" i], [type="image" i], [type="checkbox" i], [type="radio" i]) {
+
+}
+
+input {
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  line-height: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  appearance: auto;
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  background-color: field;
+}
+
 .header__email--btn {
   z-index: 2;
   margin: 8px;
-  height: calc(100% - 16 px);
+  height: calc(100% - 16px);
   border-radius: 500px;
   width: 160px;
   border: none;
@@ -334,6 +346,10 @@ input[type="text" i] {
   font-weight: 700;
   font-size: 16px;
   transition: all 300ms;
+}
+
+button {
+  cursor: pointer;
 }
 
 .header__customers--title {
