@@ -531,14 +531,6 @@ h2 {
   border-radius: 500px;
 }
 
-figure {
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 40px;
-  margin-inline-end: 40px;
-  unicode-bidi: isolate;
-}
-
 .feature__img {
   width: 24px;
   height: 24px;
@@ -710,14 +702,6 @@ button {
   display: flex;
 }
 
-figure {
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 40px;
-  margin-inline-end: 40px;
-  unicode-bidi: isolate;
-}
-
 .quality__img {
   z-index: 1;
   width: 100%;
@@ -786,13 +770,7 @@ section {
   width: 50%;
 }
 
-figure {
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 40px;
-  margin-inline-end: 40px;
-  unicode-bidi: isolate;
-}
+
 
 .steps__img {
   z-index: 2;
@@ -1005,6 +983,7 @@ h2 {
 .values__list {
   display: flex;
   
+  
 }
 
 .value:nth-of-type(1) {
@@ -1015,8 +994,6 @@ h2 {
 .value__title {
   display: flex;
   align-items: center;
-  
-  
 }
 
 .value:nth-child(1) .value__img--wrapper {
@@ -1030,13 +1007,6 @@ h2 {
   align-items: center;
   width: 36px;
   height: 36px;
-}
-
-figure {
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 40px;
-  margin-inline-end: 40px;
 }
 
 .value__img {
@@ -1208,9 +1178,9 @@ p {
     background: linear-gradient(115deg, rgb(56 178 172) 0%, rgb(129 230 217)100%);
 }
 
-.plan:nth-child(3) .plan__stripe, .plan:nth-child(3) .plan__button {
-    color: #f7fafc;
-    background: linear-gradient(135deg, rgb(168, 106, 163) 0%, rgb(183, 101, 185) 100%);
+.plan:nth-child(3) .plan__stripe {
+  color: #f7fafc;
+  background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
 }
 
 .plan__stripe {
@@ -1355,6 +1325,11 @@ button {
     padding-inline: 6px;
 }
 
+.plan:nth-child(3) .plan__button {
+    color: #f7fafc;
+  background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+}
+
 
 
 .value__description {
@@ -1485,7 +1460,7 @@ p {
 .testimonial__title {
   font-weight: 700;
   color: #243e63;
-  font-size: 20px;
+  font-size: 10px;
   line-height: 1.5;
   margin-top: 16px;
 }
