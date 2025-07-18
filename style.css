@@ -1412,7 +1412,15 @@ section {
   width: 40%;
 }
 
-@media (max-width: 1024px) {
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  width: 100%;
+}
+
+
+
+@media (max-width: 1200px) {
   .testimonials__img {
     width: 40%;
     flex-direction: column;
@@ -1421,7 +1429,7 @@ section {
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .testimonials__description {
     width: 60%;
     flex-direction: column;
