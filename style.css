@@ -1559,6 +1559,11 @@ h3 {
   border-radius: 50%;
 }
 
+.testimonial__img--wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
 .testimonial__details {
   margin-left: 24px;
 }
