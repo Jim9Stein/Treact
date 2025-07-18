@@ -225,6 +225,14 @@ header {
   padding: 96px 0;
 }
 
+@media (max-width: 1024px) {
+  .row {
+    flex-direction: column;
+  align-items: center;
+  }
+  
+}
+
 header .row {
   display: flex;
   max-width: 1200px;
@@ -235,9 +243,11 @@ header .row {
   width: 40%;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   h1 {
     font-size: 36px;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -265,9 +275,11 @@ h1 {
   margin: 32px 0;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   .header__description--para {
     font-size: 16px;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -359,9 +371,11 @@ p{
   line-height: 1.5;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   .header__customers {
     padding-right: 64px;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -380,10 +394,12 @@ img {
   overflow: clip;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   .header__img--wrapper {
     display: flex;
     justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -392,9 +408,11 @@ img {
   max-width: 768px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   .header__img {
     max-width: 512px;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -436,6 +454,13 @@ section {
 
 .container {
   padding: 96px 0;
+}
+
+@media (max-width: 1024px) {
+  .row__narrow {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 #features .row__narrow {
@@ -1101,6 +1126,14 @@ section {
     padding: 96px 0;
 }
 
+@media (max-width: 1024px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
 #pricing .row {
     display: flex;
     flex-direction: column;
@@ -1148,6 +1181,13 @@ p {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   unicode-bidi: isolate;
+}
+
+@media (max-width: 1024px) {
+  .plans {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .plans {
@@ -1266,9 +1306,11 @@ p {
     position: relative;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
     .plan__bottom {
-        padding: 32px 64px;
+       
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -1293,9 +1335,12 @@ p {
     color: #6415ff;
     background-color: #f7fafc;
 }
-@media (max-width: 1200) {
+@media (max-width: 1084) {
     .plan__button {
         max-width: none;
+        flex-direction: column;
+        align-items: center;
+
     }
 }
 
@@ -1363,16 +1408,24 @@ section {
   margin: 0 auto;
 }
 
-@media (max-width: 1200px) {
+.testimonial__img {
+  width: 40%;
+}
+
+@media (max-width: 1024px) {
   .testimonials__img {
     width: 40%;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   .testimonials__description {
     width: 60%;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -1532,6 +1585,7 @@ h3 {
 }
 
 button {
+  border: none;
   appearance: auto;
   text-rendering: auto;
   letter-spacing: normal;
@@ -1583,6 +1637,13 @@ section
   margin: 0 auto;
 }
 
+@media (max-width: 1024px) {
+  .start__container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .start__container {
   padding: 96px 0;
   width: 100%;
@@ -1603,6 +1664,13 @@ section
   align-items: center;
 }
 
+@media (max-width: 1024px) {
+  .start__title {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .start__title {
   color: #f7fafc;
   font-size: 30px;
@@ -1612,10 +1680,17 @@ section
   width: 50%;
 }
 
+@media (max-width: 1024px) {
+  .start__buttons {
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+  }
+}
+
 .start__buttons {
   display: flex;
   justify-content: flex-end;
-  width: 50%;
 }
 
 .start__button:nth-child(1) {
@@ -1677,6 +1752,14 @@ footer {
   margin: 0 auto;
 }
 
+@media (max-width: 1024px){
+  .footer__columns {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .footer__columns {
   margin-top: -48px;
   display: flex;
@@ -1684,12 +1767,21 @@ footer {
   flex-wrap: wrap;
 }
 
+@media (max-width: 640px) {
+  .footer__column {
+    width: auto;
+    padding: 0 16px;
+    text-align: center;
+    align-items: center;
+  }
+}
+
 .footer__column {
   margin-top: 48px;
   display: flex;
   flex-direction: column;
   width: calc(100% / 5);
-  align-items: flex-start;
+  align-items: center;
   z-index: 2;
 }
 
