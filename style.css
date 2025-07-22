@@ -1924,6 +1924,56 @@ svg:not(:root) {
   }
 }
 
+@media (max-width: 352px) {
+  .nav__logo--title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 352px) {
+  .section__title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 352px) {
+  .header__email--input {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 352px) {
+  .plan__top, .plan__middle, .plan__bottom {
+    padding: 24px 16px;
+  }
+}
+
+@media (max-width: 352px) {
+  .start__buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media (max-width: 352px) {
+  .start__button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 352px) {
+  .start__button:nth-child(1) {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 352px) {
+  .footer__column {
+    width: 100%;
+    align-items: flex-start;
+  }
+}
 
 
 
